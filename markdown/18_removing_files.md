@@ -10,24 +10,24 @@ Let me repeat that last part again. It is possible to delete EVERY file you have
 and type "y" (for yes) to indicate you truly intend to delete the files.
 
 ```bash
-learner@:learning_unix$ cd temp
-learner@:temp$ ls
+bch709@:learning_unix$ cd temp
+bch709@:temp$ ls
 earth.txt  heaven.txt  rags  temp2
-learner@:temp$ rm -i earth.txt heaven.txt rags
+bch709@:temp$ rm -i earth.txt heaven.txt rags
 rm: remove regular empty file earth.txt? y
 rm: remove regular empty file heaven.txt? y
 rm: remove regular empty file rags? y
-learner@:temp$ ls
+bch709@:temp$ ls
 temp2
 ```
 
 We could have simplified this step by using a wild-card (e.g. `rm -i *.txt`) or we could have made things more complex by removing each file with a separate `rm` command. Let's finish cleaning up:
 
 ```bash
-learner@:temp$ rmdir temp2/temp3/
-learner@:temp$ rmdir temp2/
-learner@:temp$ cd ..
-learner@:learning_unix$ rmdir temp
+bch709@:temp$ rmdir temp2/temp3/
+bch709@:temp$ rmdir temp2/
+bch709@:temp$ cd ..
+bch709@:learning_unix$ rmdir temp
 ```
 
 [rm]: http://en.wikipedia.org/wiki/Rm_(Unix)

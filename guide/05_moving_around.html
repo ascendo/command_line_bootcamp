@@ -15,21 +15,21 @@
       <h2 id="05-getting-from-a-to-b-">05: Getting from &#39;A&#39; to &#39;B&#39;</h2>
 <p>We are in the home directory on the computer but we want to to work in the new <code>learning_unix</code> directory. To change directories in Unix, we use the <a href="http://en.wikipedia.org/wiki/Cd_(command)">cd</a> command:</p>
 <pre><code class="lang-bash">cd learning_unix
-learner@:~/learning_unix$
+bch709@:~/learning_unix$
 </code></pre>
 <p>Notice that on this system the command prompt has expanded to include our current directory. This doesn&#39;t happen by default on all Unix systems, and you can configure what information appears as part of the command prompt (though we won&#39;t cover that here).</p>
 <p>Let&#39;s make two new subdirectories and navigate into them:</p>
-<pre><code class="lang-bash">learner@:learning_unix$ mkdir outer
-learner@:learning_unix$ cd outer
-learner@:outer$
+<pre><code class="lang-bash">bch709@:learning_unix$ mkdir outer
+bch709@:learning_unix$ cd outer
+bch709@:outer$
 
-learner@:outer$ mkdir inner
-learner@:outer$ cd inner/
-learner@:inner$
+bch709@:outer$ mkdir inner
+bch709@:outer$ cd inner/
+bch709@:inner$
 </code></pre>
 <p>Remember that you can always find out where you are using <code>pwd</code>:</p>
-<pre><code class="lang-bash">learner@:inner$ pwd
-/home/learner/learning_unix/outer/inner
+<pre><code class="lang-bash">bch709@:inner$ pwd
+/home/bch709/learning_unix/outer/inner
 </code></pre>
 <p>We created the two directories in separate steps, but it is possible to use the <code>mkdir</code> command in way to do this all in one step.</p>
 <p>Like most Unix commands, <code>mkdir</code> supports <em>command-line options</em> which let you alter its behavior and functionality. Command-like options are - as the name suggests - optional arguments that are placed after the command name. They often take the form of single letters (following a dash). If we had used the <code>-p</code> option of the <code>mkdir</code> command we could have done this in one step. E.g.</p>

@@ -4,7 +4,7 @@ We are in the home directory on the computer but we want to to work in the new `
 
 ```bash
 cd learning_unix
-learner@:~/learning_unix$
+bch709@:~/learning_unix$
 ```
 
 Notice that on this system the command prompt has expanded to include our current directory. This doesn't happen by default on all Unix systems, and you can configure what information appears as part of the command prompt (though we won't cover that here).
@@ -12,20 +12,20 @@ Notice that on this system the command prompt has expanded to include our curren
 Let's make two new subdirectories and navigate into them:
 
 ```bash
-learner@:learning_unix$ mkdir outer
-learner@:learning_unix$ cd outer
-learner@:outer$
+bch709@:learning_unix$ mkdir outer
+bch709@:learning_unix$ cd outer
+bch709@:outer$
 
-learner@:outer$ mkdir inner
-learner@:outer$ cd inner/
-learner@:inner$
+bch709@:outer$ mkdir inner
+bch709@:outer$ cd inner/
+bch709@:inner$
 ```
 
 Remember that you can always find out where you are using `pwd`:
 
 ```bash
-learner@:inner$ pwd
-/home/learner/learning_unix/outer/inner
+bch709@:inner$ pwd
+/home/bch709/learning_unix/outer/inner
 ```
 
 We created the two directories in separate steps, but it is possible to use the `mkdir` command in way to do this all in one step.

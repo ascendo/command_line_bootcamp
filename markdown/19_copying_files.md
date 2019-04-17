@@ -3,20 +3,20 @@
 Copying files with the [cp][] (copy) command is very similar to moving them. Remember to always specify a source and a target location. Let's create a new file and make a copy of it:
 
 ```bash
-learner@:learning_unix$ touch file1
-learner@:learning_unix$ cp file1 file2
-learner@:learning_unix$ ls
+bch709@:learning_unix$ touch file1
+bch709@:learning_unix$ cp file1 file2
+bch709@:learning_unix$ ls
 file1  file2
 ```
 
 What if we wanted to copy files from a different directory to our current directory? Let's put a file in our home directory (specified by `~` remember) and copy it to the current directory (`learning_unix`):
 
 ```bash
-learner@:learning_unix$ touch ~/file3
-learner@:learning_unix$ ls ~
+bch709@:learning_unix$ touch ~/file3
+bch709@:learning_unix$ ls ~
 command_line_course  file3  learning_unix  linux_bootcamp
-learner@:learning_unix$ cp ~/file3 .
-learner@:learning_unix$ ls
+bch709@:learning_unix$ cp ~/file3 .
+bch709@:learning_unix$ ls
 file1  file2  file3
 ```
 
@@ -33,7 +33,7 @@ In this case, using the dot is somewhat pointless because `ls` will already list
 Finally, let's clean up this directory. Note the use of the `*` wildcard, which allows us to delete all three files at once.
 
 ```bash
-learner@:learning_unix$ rm file*
+bch709@:learning_unix$ rm file*
 ```
 
 [cp]: http://en.wikipedia.org/wiki/Cp_(Unix)

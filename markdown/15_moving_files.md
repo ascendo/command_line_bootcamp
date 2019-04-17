@@ -3,12 +3,12 @@
 Now, let's assume that we want to move these files to a new directory ('temp'). We will do this using the Unix [mv][] (move) command. Remember to use tab completion:
 
 ```bash
-learner@:learning_unix$ mkdir temp
-learner@:learning_unix$ mv heaven.txt temp/
-learner@:learning_unix$ mv earth.txt temp/
-learner@:learning_unix$ ls
+bch709@:learning_unix$ mkdir temp
+bch709@:learning_unix$ mv heaven.txt temp/
+bch709@:learning_unix$ mv earth.txt temp/
+bch709@:learning_unix$ ls
 temp
-learner@:learning_unix$ ls temp/
+bch709@:learning_unix$ ls temp/
 earth.txt  heaven.txt
 ```
 
