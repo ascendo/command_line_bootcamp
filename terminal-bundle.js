@@ -12167,8 +12167,8 @@ module.exports = function(parentDiv) {
   var qs = url.parse(window.location.href, true).query
   var socket = websocket('ws://'+qs.server+'/'+(qs.id || ''))
 
-  termjs.Terminal.colors[256] = '#ffffff'
-  termjs.Terminal.colors[257] = '#000000'
+  termjs.Terminal.colors[256] = '#ffffff';
+  termjs.Terminal.colors[257] = '#000000';
 
   var container = docker({
     style:false, renderer: termjs
