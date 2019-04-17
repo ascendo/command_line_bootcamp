@@ -12,5 +12,5 @@ bch709@:learning_unix$
 ```
 
 *** Note, you have to be outside a directory before you can remove it with `rmdir` ***
-
+*** Also, you can use ```bash rm -rf DIR_NAME ```
 [rmdir]: http://en.wikipedia.org/wiki/Rmdir
