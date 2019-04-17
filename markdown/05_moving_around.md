@@ -24,7 +24,7 @@ learner@:~/learning_unix/outer/inner$
 Remember that you can always find out where you are using `pwd`:
 
 ```bash
-learner@:inner$ pwd
+learner@:~/learning_unix/outer/inner$ pwd
 /home/learner/learning_unix/outer/inner
 ```
 
