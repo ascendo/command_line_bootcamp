@@ -14,14 +14,14 @@
         <p><a href="index.html">table of contents</a></p>
       <h2 id="10-making-the-ls-command-more-useful">10: Making the <code>ls</code> command more useful</h2>
 <p>The <code>..</code> operator that we saw earlier can also be used with the <code>ls</code> command, e.g. you can list directories that are &#39;above&#39; you:</p>
-<pre><code class="lang-bash">learner@:learning_unix$ cd ~/learning_unix/outer/
-learner@:outer$ ls ../../
+<pre><code class="lang-bash">bch709@:learning_unix$ cd ~/learning_unix/outer/
+bch709@:outer$ ls ../../
 a_directory another_directory learning_unix
 </code></pre>
 <p>Time to learn another useful command-line option. If you add the letter &#39;l&#39; to the <code>ls</code> command it will give you a longer output compared to the default:</p>
-<pre><code class="lang-bash">learner@:learning_unix$ ls -l /home
+<pre><code class="lang-bash">bch709@:learning_unix$ ls -l /home
 total 4
-drwxr-xr-x 6 learner learner 4096 Dec  2 08:31 learner
+drwxr-xr-x 6 bch709 bch709 4096 Dec  2 08:31 bch709
 </code></pre>
 <p>For each file or directory we now see more information (including file ownership and modification times). The &#39;d&#39; at the start of each line indicates that these are directories. There are many, many different options for the <code>ls</code> command. Try out the following (against any directory of your choice) to see how the output changes.</p>
 <pre><code class="lang-bash">ls -l

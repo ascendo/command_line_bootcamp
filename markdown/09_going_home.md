@@ -15,7 +15,7 @@ Hopefully, you should find that `cd` and `cd ~` do the same thing, i.e. they tak
 You can also use the `~` as a quick way of navigating into subdirectories of your home directory when your current directory is somewhere else. I.e. the quickest way of navigating from the root directory to your `learning_unix` directory is as follows:
 
 ```bash
-learner@:~$ cd /
-learner@:/$ cd ~/learning_unix
+bch709@:~$ cd /
+bch709@:/$ cd ~/learning_unix
 ```
 [home directory]: http://en.wikipedia.org/wiki/Tilde#Directories_and_URLs

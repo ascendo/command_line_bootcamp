@@ -14,20 +14,21 @@
         <p><a href="index.html">table of contents</a></p>
       <h2 id="06-the-root-directory">06: The root directory</h2>
 <p>Let&#39;s change directory to the root directory, and then into our home directory</p>
-<pre><code class="lang-bash">learner@:inner$ cd /
-learner@:/$ cd home
-learner@:home$ cd learner
-learner@:~$
+<pre><code class="lang-bash">
+bch709@:/learning_unix/outer/inner$ cd /
+bch709@:/$ cd home
+bch709@:/home$ cd learner
+bch709@:~$
 </code></pre>
 <p>In this case, we may as well have just changed directory in one go:</p>
-<pre><code class="lang-bash">cd /home/learner/
+<pre><code class="lang-bash">cd /home/bch709/
 </code></pre>
 <p>The leading <code>/</code> is incredibly important. The following two commands are very different:</p>
-<pre><code class="lang-bash">cd /home/learner/
-cd home/learner/
+<pre><code class="lang-bash">cd /home/bch709/
+cd home/bch709/
 </code></pre>
-<p>The first command says go the <code>learner</code> directory that is beneath the <code>home</code> directory that is at the top level (the root) of the file system. There can only be one <code>/home/learner</code> directory on any Unix system.</p>
-<p>The second command says go to the <code>learner</code> directory that is beneath the <code>home</code> directory that is located wherever I am right now. There can potentially be many <code>home/learner</code> directories on a Unix system (though this is unlikely).</p>
+<p>The first command says go the <code>bch709</code> directory that is beneath the <code>home</code> directory that is at the top level (the root) of the file system. There can only be one <code>/home/bch709</code> directory on any Unix system.</p>
+<p>The second command says go to the <code>bch709</code> directory that is beneath the <code>home</code> directory that is located wherever I am right now. There can potentially be many <code>home/bch709</code> directories on a Unix system (though this is unlikely).</p>
 <p>Learn and understand the difference between these two commands.</p>
 
         <div class="navlinks">

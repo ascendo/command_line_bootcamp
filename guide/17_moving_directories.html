@@ -14,9 +14,9 @@
         <p><a href="index.html">table of contents</a></p>
       <h2 id="17-moving-directories">17: Moving directories</h2>
 <p>It is important to understand that as long as you have specified a &#39;source&#39; and a &#39;target&#39; location when you are moving a file, then it doesn&#39;t matter what your <em>current</em> directory is. You can move or copy things within the same directory or between different directories regardless of whether you are in any of those directories. Moving directories is just like moving files:</p>
-<pre><code class="lang-bash">learner@:learning_unix$ mkdir temp2
-learner@:learning_unix$ mv temp2 temp
-learner@:learning_unix$ ls temp/
+<pre><code class="lang-bash">bch709@:learning_unix$ mkdir temp2
+bch709@:learning_unix$ mv temp2 temp
+bch709@:learning_unix$ ls temp/
 earth.txt  heaven.txt  rags  temp2
 </code></pre>
 <p>This step moves the temp2 directory inside the temp directory. Try creating a &#39;temp3&#39; directory inside &#39;learning_unix&#39; and then <code>cd</code> to <code>/tmp</code>. Can you move <code>temp3</code> inside <code>temp2</code> without changing directory? When you are finished, <code>cd</code> back to 

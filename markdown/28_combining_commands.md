@@ -3,11 +3,11 @@
 One of the most powerful features of Unix is that you can send the output from one command or program to any other command (as long as the second command accepts input of some sort). We do this by using what is known as a [pipe][]. This is implemented using the '|' character (which is a character which always seems to be on different keys depending on the keyboard that you are using). Think of the pipe as simply connecting two Unix programs. Here's an example which introduces some new Unix commands:
 
 ```bash
-learner@:learning_unix$ 
+bch709@:learning_unix$ 
 grep was opening_lines.txt | wc -c
 316
 
-learner@:learning_unix$
+bch709@:learning_unix$
 grep was opening_lines.txt | sort | head -n 3 | wc -c
 130
 ```
