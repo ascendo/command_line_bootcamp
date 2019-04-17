@@ -3,9 +3,9 @@
 Let's change directory to the root directory, and then into our home directory
 
 ```bash
-learner@:inner$ cd /
+learner@:/learning_unix/outer/inner$ cd /
 learner@:/$ cd home
-learner@:home$ cd learner
+learner@:/home$ cd learner
 learner@:~$
 ```
 
