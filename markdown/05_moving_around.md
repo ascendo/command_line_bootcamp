@@ -12,20 +12,23 @@ Notice that on this system the command prompt has expanded to include our curren
 Let's make two new subdirectories and navigate into them:
 
 ```bash
-bch709@:learning_unix$ mkdir outer
-bch709@:learning_unix$ cd outer
-bch709@:outer$
 
-bch709@:outer$ mkdir inner
-bch709@:outer$ cd inner/
-bch709@:inner$
+bch709@:~/learning_unix$ mkdir outer
+bch709@:~/learning_unix$ cd outer
+bch709@:~/learning_unix/outer$
+
+bch709@:~/learning_unix/outer$ mkdir inner
+bch709@:~/learning_unix/outer$ cd inner/
+bch709@:~/learning_unix/outer/inner$
 ```
 
 Remember that you can always find out where you are using `pwd`:
 
 ```bash
-bch709@:inner$ pwd
-/home/bch709/learning_unix/outer/inner
+
+bch709@:~/learning_unix/outer/inner$ pwd
+/home/learner/learning_unix/outer/inner
+
 ```
 
 We created the two directories in separate steps, but it is possible to use the `mkdir` command in way to do this all in one step.

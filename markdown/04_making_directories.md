@@ -5,7 +5,7 @@ If we want to make a new directory (e.g. to store some work related data), we ca
 ```bash
 bch709@:~$ mkdir learning_unix
 bch709@:~$ ls
-a_directory another_directory learning_unix
+bio_directory informatics_directory learning_unix
 ```
 
 [mkdir]: https://en.wikipedia.org/wiki/Mkdir

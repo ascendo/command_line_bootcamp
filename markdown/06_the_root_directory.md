@@ -3,9 +3,10 @@
 Let's change directory to the root directory, and then into our home directory
 
 ```bash
-bch709@:inner$ cd /
+
+bch709@:/learning_unix/outer/inner$ cd /
 bch709@:/$ cd home
-bch709@:home$ cd bch709
+bch709@:/home$ cd learner
 bch709@:~$
 ```
 
