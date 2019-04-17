@@ -12,13 +12,13 @@ Notice that on this system the command prompt has expanded to include our curren
 Let's make two new subdirectories and navigate into them:
 
 ```bash
-learner@:learning_unix$ mkdir outer
-learner@:learning_unix$ cd outer
-learner@:outer$
+learner@:~/learning_unix$ mkdir outer
+learner@:~/learning_unix$ cd outer
+learner@:~/learning_unix/outer$
 
-learner@:outer$ mkdir inner
-learner@:outer$ cd inner/
-learner@:inner$
+learner@:~/learning_unix/outer$ mkdir inner
+learner@:~/learning_unix/outer$ cd inner/
+learner@:~/learning_unix/outer/inner$
 ```
 
 Remember that you can always find out where you are using `pwd`:
