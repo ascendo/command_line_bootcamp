@@ -4,9 +4,9 @@ We now have a few (empty) directories that we should remove. To do this use the 
 
 ```bash
 bch709@:~$ cd ~/learning_unix/outer/
-bch709@:outer$ rmdir inner/
-bch709@:outer$ cd ..
-bch709@:learning_unix$ rmdir outer/
+bch709@:~/learning_unix/outer/$ rmdir inner/
+bch709@:~/learning_unix/outer/$ cd ..
+bch709@:~/learning_unix$ rmdir outer/
 bch709@:learning_unix$ ls
 bch709@:learning_unix$
 ```
