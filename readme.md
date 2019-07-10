@@ -90,3 +90,9 @@ Sometimes people leave their browser windows open for a really long time. If you
 ```bash
 docker stop $(docker ps | grep hours | cut -d ' ' -f1 | paste - - - - )
 ```
+
+
+```if permission error
+sudo usermod -a -G docker $USER
+```
+https://techoverflow.net/2017/03/01/solving-docker-permission-denied-while-trying-to-connect-to-the-docker-daemon-socket/
