@@ -43,7 +43,8 @@ cd command_line_bootcamp
 sudo docker build -t "command_line_bootcamp" .
 
 # run
-docker-browser-server command_line_bootcamp -p 8080
+#docker-browser-server command_line_bootcamp -p 8080
+sudo PATH=/home/wyim/.nvm/versions/node/v4.1.2/bin:$PATH /home/wyim/.nvm/versions/node/v4.1.2/bin/docker-browser-server command_line_bootcamp -p 8080
 ```
 
 ### build and deploy the frontend
