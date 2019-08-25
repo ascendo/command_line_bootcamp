@@ -624,24 +624,28 @@ function onceStrict (fn) {
 if (typeof Object.create === 'function') {
   // implementation from standard node.js 'util' module
   module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    ctor.prototype = Object.create(superCtor.prototype, {
-      constructor: {
-        value: ctor,
-        enumerable: false,
-        writable: true,
-        configurable: true
-      }
-    });
+    if (superCtor) {
+      ctor.super_ = superCtor
+      ctor.prototype = Object.create(superCtor.prototype, {
+        constructor: {
+          value: ctor,
+          enumerable: false,
+          writable: true,
+          configurable: true
+        }
+      })
+    }
   };
 } else {
   // old school shim for old browsers
   module.exports = function inherits(ctor, superCtor) {
-    ctor.super_ = superCtor
-    var TempCtor = function () {}
-    TempCtor.prototype = superCtor.prototype
-    ctor.prototype = new TempCtor()
-    ctor.prototype.constructor = ctor
+    if (superCtor) {
+      ctor.super_ = superCtor
+      var TempCtor = function () {}
+      TempCtor.prototype = superCtor.prototype
+      ctor.prototype = new TempCtor()
+      ctor.prototype.constructor = ctor
+    }
   }
 }
 
@@ -3032,7 +3036,8 @@ module.exports = Array.isArray || function (arr) {
 (function (process){
 'use strict';
 
-if (!process.version ||
+if (typeof process === 'undefined' ||
+    !process.version ||
     process.version.indexOf('v0.') === 0 ||
     process.version.indexOf('v1.') === 0 && process.version.indexOf('v1.8.') !== 0) {
   module.exports = { nextTick: nextTick };
@@ -3956,7 +3961,7 @@ module.exports.obj = through2(function (options, transform, flush) {
 })
 
 }).call(this,require('_process'))
-},{"_process":96,"readable-stream":43,"util":116,"xtend":45}],45:[function(require,module,exports){
+},{"_process":96,"readable-stream":43,"util":117,"xtend":45}],45:[function(require,module,exports){
 module.exports = extend
 
 var hasOwnProperty = Object.prototype.hasOwnProperty;
@@ -12019,7 +12024,7 @@ module.exports.obj = through2(function (options, transform, flush) {
 })
 
 }).call(this,require('_process'))
-},{"_process":96,"readable-stream/transform":79,"util":116,"xtend":82}],81:[function(require,module,exports){
+},{"_process":96,"readable-stream/transform":79,"util":117,"xtend":82}],81:[function(require,module,exports){
 
 /**
  * Module dependencies.
@@ -12167,8 +12172,8 @@ module.exports = function(parentDiv) {
   var qs = url.parse(window.location.href, true).query
   var socket = websocket('ws://'+qs.server+'/'+(qs.id || ''))
 
-  termjs.Terminal.colors[256] = '#ffffff';
-  termjs.Terminal.colors[257] = '#000000';
+  termjs.Terminal.colors[256] = '#ffffff'
+  termjs.Terminal.colors[257] = '#000000'
 
   var container = docker({
     style:false, renderer: termjs
@@ -17335,13 +17340,38 @@ function isNullOrUndefined(arg) {
 }
 
 },{"punycode":97,"querystring":100}],115:[function(require,module,exports){
+if (typeof Object.create === 'function') {
+  // implementation from standard node.js 'util' module
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    ctor.prototype = Object.create(superCtor.prototype, {
+      constructor: {
+        value: ctor,
+        enumerable: false,
+        writable: true,
+        configurable: true
+      }
+    });
+  };
+} else {
+  // old school shim for old browsers
+  module.exports = function inherits(ctor, superCtor) {
+    ctor.super_ = superCtor
+    var TempCtor = function () {}
+    TempCtor.prototype = superCtor.prototype
+    ctor.prototype = new TempCtor()
+    ctor.prototype.constructor = ctor
+  }
+}
+
+},{}],116:[function(require,module,exports){
 module.exports = function isBuffer(arg) {
   return arg && typeof arg === 'object'
     && typeof arg.copy === 'function'
     && typeof arg.fill === 'function'
     && typeof arg.readUInt8 === 'function';
 }
-},{}],116:[function(require,module,exports){
+},{}],117:[function(require,module,exports){
 (function (process,global){
 // Copyright Joyent, Inc. and other Node contributors.
 //
@@ -17931,7 +17961,7 @@ function hasOwnProperty(obj, prop) {
 }
 
 }).call(this,require('_process'),typeof global !== "undefined" ? global : typeof self !== "undefined" ? self : typeof window !== "undefined" ? window : {})
-},{"./support/isBuffer":115,"_process":96,"inherits":92}],117:[function(require,module,exports){
+},{"./support/isBuffer":116,"_process":96,"inherits":115}],118:[function(require,module,exports){
 var terminal = require('adventure-time/terminal')
 terminal()
-},{"adventure-time/terminal":84}]},{},[117]);
+},{"adventure-time/terminal":84}]},{},[118]);

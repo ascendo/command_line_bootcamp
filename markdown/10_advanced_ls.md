@@ -16,20 +16,20 @@ drwxr-xr-x 6 bch709 bch709 4096 Dec  2 08:31 bch709
 ```
 For each file or directory we now see more information (including file ownership and modification times). The 'd' at the start of each line indicates that these are directories. and rwx means permission for each user, group and others.
 
-[ls -l](https://4.bp.blogspot.com/-NCCODMUfO4A/UM4byzdcvRI/AAAAAAAAAqs/ZvMPRC-elwE/s1600/linux_file_permissions.png)
-[permission](https://i.stack.imgur.com/3NNb8.png)
+![ls -l](https://4.bp.blogspot.com/-NCCODMUfO4A/UM4byzdcvRI/AAAAAAAAAqs/ZvMPRC-elwE/s1600/linux_file_permissions.png)  
+![permission](https://i.stack.imgur.com/3NNb8.png)  
 
-*Understanding of attribute which can be out put by ls-l:*
-[!ls -l](https://i.stack.imgur.com/Lm5yf.png)
+*Understanding of attribute which can be out put by ls-l:*  
+![ls -l](https://i.stack.imgur.com/Lm5yf.png)  
 
-*Chmod (Change mode)*
-chmod is the command and system call which is used to change the access permissions of file system objects (files and directories). It is also used to change special mode flags. The request is filtered by the umask. The name is an abbreviation of change mode
+*Chmod (Change mode)*  
+chmod is the command and system call which is used to change the access permissions of file system objects (files and directories). It is also used to change special mode flags. The request is filtered by the umask. The name is an abbreviation of change mode.    
 
-*Applying Permission:*
-[!ls -l](https://i.stack.imgur.com/DDHXy.png)
-[!ls -l](https://i.stack.imgur.com/uNXVy.png)
-*Using Octal number:*
-[!octal](https://i.stack.imgur.com/9fEAm.png)
+*Applying Permission:*  
+![ls -l](https://i.stack.imgur.com/DDHXy.png)  
+![ls -l](https://i.stack.imgur.com/uNXVy.png)  
+*Using Octal number:*  
+![octal](https://i.stack.imgur.com/9fEAm.png)  
 Hence Following work same like:
 ```bash
 chmod +rwx [file_name]

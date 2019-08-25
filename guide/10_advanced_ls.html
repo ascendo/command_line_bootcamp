@@ -23,7 +23,20 @@ a_directory another_directory learning_unix
 total 4
 drwxr-xr-x 6 bch709 bch709 4096 Dec  2 08:31 bch709
 </code></pre>
-<p>For each file or directory we now see more information (including file ownership and modification times). The &#39;d&#39; at the start of each line indicates that these are directories. There are many, many different options for the <code>ls</code> command. Try out the following (against any directory of your choice) to see how the output changes.</p>
+<p>For each file or directory we now see more information (including file ownership and modification times). The &#39;d&#39; at the start of each line indicates that these are directories. and rwx means permission for each user, group and others.</p>
+<p><img src="https://4.bp.blogspot.com/-NCCODMUfO4A/UM4byzdcvRI/AAAAAAAAAqs/ZvMPRC-elwE/s1600/linux_file_permissions.png" alt="ls -l"><br><img src="https://i.stack.imgur.com/3NNb8.png" alt="permission">  </p>
+<p><em>Understanding of attribute which can be out put by ls-l:</em><br><img src="https://i.stack.imgur.com/Lm5yf.png" alt="ls -l">  </p>
+<p><em>Chmod (Change mode)</em><br>chmod is the command and system call which is used to change the access permissions of file system objects (files and directories). It is also used to change special mode flags. The request is filtered by the umask. The name is an abbreviation of change mode.    </p>
+<p><em>Applying Permission:</em><br><img src="https://i.stack.imgur.com/DDHXy.png" alt="ls -l"><br><img src="https://i.stack.imgur.com/uNXVy.png" alt="ls -l"><br><em>Using Octal number:</em><br><img src="https://i.stack.imgur.com/9fEAm.png" alt="octal"><br>Hence Following work same like:</p>
+<pre><code class="lang-bash">chmod +rwx [file_name]
+chmod 777 [file_name]
+</code></pre>
+<pre><code class="lang-bash">chmod 775 [file_name]
+chmod ug+rwx,o=rx [file_name]
+</code></pre>
+<p>Here is the easy example link.</p>
+<p><a href="https://chmodcommand.com/">chmod</a></p>
+<p>There are many, many different options for the <code>ls</code> command. Try out the following (against any directory of your choice) to see how the output changes.</p>
 <pre><code class="lang-bash">ls -l
 ls -R
 ls -l -t -r
