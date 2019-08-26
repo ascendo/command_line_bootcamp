@@ -5,7 +5,7 @@
 
 FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install -y curl git python build-essential nano man vim emacs25
+RUN apt-get update && apt-get install -y curl git python build-essential nano man vim 
 
 # create a non-root user
 RUN useradd -ms /bin/bash bch709
