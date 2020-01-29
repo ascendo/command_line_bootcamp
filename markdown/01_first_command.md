@@ -4,7 +4,7 @@ It's important to note that you will always be *inside* a single directory when 
 
 ```bash
 bch709@:~$ ls
-a_directory another_directory
+bio_directory informatics_directory
 bch709@:~$
 ```
 
