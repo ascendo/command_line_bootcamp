@@ -27,7 +27,7 @@ Remember that you can always find out where you are using `pwd`:
 ```bash
 
 bch709@:~/learning_unix/outer/inner$ pwd
-/home/learner/learning_unix/outer/inner
+/home/bch709/learning_unix/outer/inner
 
 ```
 
