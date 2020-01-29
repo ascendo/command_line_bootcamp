@@ -1,4 +1,6 @@
 ## 26: Matching lines in files with grep
+https://pastebin.com/raw/LT4GVY7m
+
 
 Use `nano` to add the following lines to `opening_lines.txt`, making sure to use the `WriteOut` command to save:
 
