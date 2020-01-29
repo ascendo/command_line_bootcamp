@@ -9,7 +9,7 @@ First let's download ourselves a test file and look at it's contents:
 ```bash
 cd
 curl https://raw.githubusercontent.com/Blahah/command_line_bootcamp/master/testfiles/grades.txt > grades.txt
-less testfile.vcf
+less grades.txt
 ```
 
 `curl` will download the contents of any URL you provide it and print it to STDOUT. Since we want our test file on the filesystem, we redirect the output of `curl` to the file "grades.txt"
