@@ -14,7 +14,7 @@ What if we wanted to copy files from a different directory to our current direct
 ```bash
 bch709@:learning_unix$ touch ~/file3
 bch709@:learning_unix$ ls ~
-command_line_course  file3  learning_unix  linux_bootcamp
+bio_directory  informatics_directory  file3  learning_unix
 bch709@:learning_unix$ cp ~/file3 .
 bch709@:learning_unix$ ls
 file1  file2  file3
