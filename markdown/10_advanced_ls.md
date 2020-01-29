@@ -5,7 +5,7 @@ The `..` operator that we saw earlier can also be used with the `ls` command, e.
 ```bash
 bch709@:learning_unix$ cd ~/learning_unix/outer/
 bch709@:outer$ ls ../../
-a_directory another_directory learning_unix                                                                                                                  ```
+bio_directory informatics_directory learning_unix                                                                                                                  ```
 
 Time to learn another useful command-line option. If you add the letter 'l' to the `ls` command it will give you a longer output compared to the default:
 
