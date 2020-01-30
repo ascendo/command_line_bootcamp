@@ -18,7 +18,7 @@
 <p>First let&#39;s download ourselves a test file and look at it&#39;s contents:</p>
 <pre><code class="lang-bash">cd
 curl https://raw.githubusercontent.com/Blahah/command_line_bootcamp/master/testfiles/grades.txt &gt; grades.txt
-less testfile.vcf
+less grades.txt
 </code></pre>
 <p><code>curl</code> will download the contents of any URL you provide it and print it to STDOUT. Since we want our test file on the filesystem, we redirect the output of <code>curl</code> to the file &quot;grades.txt&quot;</p>
 <p>As you can see, this file containing hypothetical grades for hypothetical characters. First of all, one character stands out - &quot;Spock&quot;, as he aces every class. Let&#39;s extract his information:</p>
